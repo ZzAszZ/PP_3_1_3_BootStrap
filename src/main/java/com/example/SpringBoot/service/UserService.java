@@ -12,6 +12,6 @@ public interface UserService {
     List<User> usersAll();
     User userAdd(User user);
     void userDelete(long id);
-    public User findByUsername(String username);
+    User findByUsername(String username);
     Set<Role> getRoles(String[] roles);
 }

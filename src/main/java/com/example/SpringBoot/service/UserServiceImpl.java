@@ -59,7 +59,7 @@ public class UserServiceImpl implements  UserService, UserDetailsService {
 
     //Поиск Юзера по имени
     public User findByUsername(String username){
-        return userRepository.findByUsername(username);
+        return userRepository.getByUsername(username);
     }
 
     //Загрузка юзера
